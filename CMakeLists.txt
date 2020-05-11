@@ -17,7 +17,7 @@ find_package(Torch REQUIRED) #libtorch 寻找库
 find_package(OpenCV REQUIRED) #opencv 寻找库
 
 
-add_executable(att_unet_cpp 02_attUnet_Half_imagesWithDir.cpp)
+add_executable(att_unet_cpp 01_sample_loadbyopecv.cpp)
 
 target_link_libraries(att_unet_cpp ${OpenCV_LIBS})
 target_link_libraries(att_unet_cpp "${TORCH_LIBRARIES}")#libtorch 关联库
